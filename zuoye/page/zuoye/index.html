@@ -49,12 +49,15 @@
 			.nav .n_right ul li:hover {
 				border-bottom: 2px solid blue;
 			}
+			
 			.nav .n_right ul li a {
 				text-decoration: none;
 			}
+			
 			.nav .n_right ul li a:hover {
 				color: blue;
 			}
+			
 			.c_left {
 				width: 30%;
 				float: left;
@@ -129,8 +132,8 @@
 				font-size: 30px;
 			}
 			
-			.pp span {
-				font-size: 50px;
+			.pp em {
+				font-style: normal;
 			}
 			
 			.list p {
@@ -179,7 +182,15 @@
 							<h3 style="font-size: 50px; font-weight: bold;">近期货币</h3>
 							<span style="display: inline-block; padding-bottom: 15px; border-bottom: 1px solid #ccc;">购买进度</span>
 						</div>
-						<p class="pp"><span>00</span>天<span>00</span>时<span>00</span>分钟<span>00</span>秒</p>
+						<div class="pp" id="time1" data-time="2019/11/18 23:32">
+							<!----data-time用来存放你商品到期的时间，时间格式就按照上面格式就好--->
+							<!--每个span的id要唯一，调用函数的时候就是要传id这一个参数-->
+							<em></em> 天
+							<em></em> 小时
+							<em></em> 分
+							<em></em> 秒
+							<!--em标签用来放置我们所要显示的时间--->
+						</div>
 						<div style="position: relative; width: 80%;height: 40px;background: white; margin: 0 auto;border-radius: 40px;">
 							<span style="text-align: center; line-height: 36px; border-radius: 40px; position: absolute;left: 0px;top:2px; width: 80%;height: 36px; background: red;">购买进度80%</span>
 						</div>
@@ -363,5 +374,5 @@
 			el: "#box"
 		})
 	</script>
-
+	<script src="time.js"></script>
 </html>
