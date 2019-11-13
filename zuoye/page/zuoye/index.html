@@ -13,7 +13,7 @@
 			}
 			
 			body {
-				background: #0c1248 none repeat center top;;
+				background: #0c1248 none repeat center top;
 			}
 			
 			.box {
@@ -46,10 +46,13 @@
 				padding: 30px 20px;
 			}
 			
-			.nav .n_right ul li:first-child {
+			.nav .n_right ul li:hover {
 				border-bottom: 2px solid blue;
 			}
 			
+			.nav .n_right ul li a {
+				text-decoration: none;
+			}
 			.c_left {
 				width: 30%;
 				float: left;
@@ -148,24 +151,26 @@
 	<body>
 		<div id="box">
 			<div class="box">
-				<div class="t">
+				<div class="t" id="shou">
 					<no1></no1>
 					<no2></no2>
 				</div>
-				<no3 x_content="我们的网站构建器，将传统的编码工作转化为直观的拖拽操作和文字录入。在这里，您仅需花上10分钟便可以完成一个H5响应式网站." x_title="使用流程">
-					<div slot='list' style="border-radius: 30px; flex: 1; padding: 100px 0px; background-image:url('https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvNmM5YmM3YzY3Yzk2MGJmNWJiNmE0ZGM1ZDA5OTY4NjEuanBn.jpg') ;background-size: 100% 100%;">
-						<img slot='tu' src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvOWNlZjc3MThhM2UzYjUwZWMwNmFlMzY2MTM2YzI2MTYucG5n.png" />
-						<p slot='ming'>创建账户</p>
-					</div>
-					<div slot='list' style="margin: 0px 30px; border-radius: 30px; flex: 1; padding: 100px 0px; background-image:url('https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvNmM5YmM3YzY3Yzk2MGJmNWJiNmE0ZGM1ZDA5OTY4NjEuanBn.jpg') ;background-size: 100% 100%;">
-						<img slot='tu' src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvMjRkOWZhNDMyOGRiNTYxMGU0MDg5MmZiYWY0MWEzZTUucG5n.png" />
-						<p slot='ming'>安全保障</p>
-					</div>
-					<div slot='list' style="border-radius: 30px; flex: 1; padding: 100px 0px; background-image:url('https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvNmM5YmM3YzY3Yzk2MGJmNWJiNmE0ZGM1ZDA5OTY4NjEuanBn.jpg') ;background-size: 100% 100%;">
-						<img slot='tu' src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvNDg1Zjk2YWE4MmFhMzdhODgzYWM3MWVjMDgxMDA5YWQucG5n.png" />
-						<p slot='ming'>绑定付款</p>
-					</div>
-				</no3>
+				<div id="one">
+					<no3 x_content="我们的网站构建器，将传统的编码工作转化为直观的拖拽操作和文字录入。在这里，您仅需花上10分钟便可以完成一个H5响应式网站." x_title="使用流程">
+						<div slot='list' style="border-radius: 30px; flex: 1; padding: 100px 0px; background-image:url('https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvNmM5YmM3YzY3Yzk2MGJmNWJiNmE0ZGM1ZDA5OTY4NjEuanBn.jpg') ;background-size: 100% 100%;">
+							<img slot='tu' src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvOWNlZjc3MThhM2UzYjUwZWMwNmFlMzY2MTM2YzI2MTYucG5n.png" />
+							<p slot='ming'>创建账户</p>
+						</div>
+						<div slot='list' style="margin: 0px 30px; border-radius: 30px; flex: 1; padding: 100px 0px; background-image:url('https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvNmM5YmM3YzY3Yzk2MGJmNWJiNmE0ZGM1ZDA5OTY4NjEuanBn.jpg') ;background-size: 100% 100%;">
+							<img slot='tu' src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvMjRkOWZhNDMyOGRiNTYxMGU0MDg5MmZiYWY0MWEzZTUucG5n.png" />
+							<p slot='ming'>安全保障</p>
+						</div>
+						<div slot='list' style="border-radius: 30px; flex: 1; padding: 100px 0px; background-image:url('https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvNmM5YmM3YzY3Yzk2MGJmNWJiNmE0ZGM1ZDA5OTY4NjEuanBn.jpg') ;background-size: 100% 100%;">
+							<img slot='tu' src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvNDg1Zjk2YWE4MmFhMzdhODgzYWM3MWVjMDgxMDA5YWQucG5n.png" />
+							<p slot='ming'>绑定付款</p>
+						</div>
+					</no3>
+				</div>
 				<no4>
 					<div slot='no1' style="border-radius: 30px; flex: 1;  background-image:url('https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvNmM5YmM3YzY3Yzk2MGJmNWJiNmE0ZGM1ZDA5OTY4NjEuanBn.jpg') ;background-size: 100% 100%;">
 						<div style="padding: 60px 0 20px 0;">
@@ -197,33 +202,36 @@
 						</div>
 					</div>
 				</no4>
-				<no3 x_content="我们的网站构建器，将传统的编码工作转化为直观的拖拽操作和文字录入。在这里，您仅需花上10分钟便可以完成一个H5响应式网站。" x_title="全球服务">
+				<div id="two">
+					<no3 x_content="我们的网站构建器，将传统的编码工作转化为直观的拖拽操作和文字录入。在这里，您仅需花上10分钟便可以完成一个H5响应式网站。" x_title="全球服务">
 
-					<img slot='img' src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvMjE4N2VmMjZiNjA3YmZmZTA0NTM4MjEzYjQ2MTJkYmMuanBn.jpg" alt="" />
+						<img slot='img' src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvMjE4N2VmMjZiNjA3YmZmZTA0NTM4MjEzYjQ2MTJkYmMuanBn.jpg" alt="" />
 
-				</no3>
+					</no3>
+				</div>
+				<div id="three">
+					<no3 x_content="我们的网站构建器，将传统的编码工作转化为直观的拖拽操作和文字录入。在这里，您仅需花上10分钟便可以完成一个H5响应式网站。" x_title="关于我们">
+						<div slot='list' style="flex: 1;text-align: left;padding: 50px;margin: 0 25px 0 0px;border-radius: 30px; flex: 1; background-image:url('https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvNmM5YmM3YzY3Yzk2MGJmNWJiNmE0ZGM1ZDA5OTY4NjEuanBn.jpg') ;background-size: 100% 100%;">
+							<img slot='tu' src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvNjJjMzNhYTUyN2NjMTIyMTFkNmM0ZjI3ZWE4YTkyZDQtZTE1NjM5NTAwMTc0MzgucG5n.png" />
+							<p slot='ming'>税收居民身份须知！</p>
+							<ul class="ul">
+								<li slot='li1'>◎ 我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制 作和维护成为一件轻松惬意的事</li>
+								<li slot='li2'>◎ 当今最领先的响应式自助建站平台</li>
+								<li slot='li3'>◎ 我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事</li>
+							</ul>
 
-				<no3 x_content="我们的网站构建器，将传统的编码工作转化为直观的拖拽操作和文字录入。在这里，您仅需花上10分钟便可以完成一个H5响应式网站。" x_title="关于我们">
-					<div slot='list' style="flex: 1;text-align: left;padding: 50px;margin: 0 25px 0 0px;border-radius: 30px; flex: 1; background-image:url('https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvNmM5YmM3YzY3Yzk2MGJmNWJiNmE0ZGM1ZDA5OTY4NjEuanBn.jpg') ;background-size: 100% 100%;">
-						<img slot='tu' src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvNjJjMzNhYTUyN2NjMTIyMTFkNmM0ZjI3ZWE4YTkyZDQtZTE1NjM5NTAwMTc0MzgucG5n.png" />
-						<p slot='ming'>税收居民身份须知！</p>
-						<ul class="ul">
-							<li slot='li1'>◎ 我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制 作和维护成为一件轻松惬意的事</li>
-							<li slot='li2'>◎ 当今最领先的响应式自助建站平台</li>
-							<li slot='li3'>◎ 我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事</li>
-						</ul>
-
-					</div>
-					<div slot='list' style="flex: 1;text-align: left;padding: 50px;border-radius: 30px; flex: 1; background-image:url('https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvNmM5YmM3YzY3Yzk2MGJmNWJiNmE0ZGM1ZDA5OTY4NjEuanBn.jpg') ;background-size: 100% 100%;">
-						<img slot='tu' src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvZDhhYzg0YWE1ZTM2Y2RjMmFkYjdmMmNiNWY1YzI3ZWEucG5n.png" />
-						<p slot='ming'>移动支付安全小知识！</p>
-						<ul class="ul">
-							<li>◎ 我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制 作和维护成为一件轻松惬意的事</li>
-							<li>◎ 当今最领先的响应式自助建站平台</li>
-							<li>◎ 我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事</li>
-						</ul>
-					</div>
-				</no3>
+						</div>
+						<div slot='list' style="flex: 1;text-align: left;padding: 50px;border-radius: 30px; flex: 1; background-image:url('https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvNmM5YmM3YzY3Yzk2MGJmNWJiNmE0ZGM1ZDA5OTY4NjEuanBn.jpg') ;background-size: 100% 100%;">
+							<img slot='tu' src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvZDhhYzg0YWE1ZTM2Y2RjMmFkYjdmMmNiNWY1YzI3ZWEucG5n.png" />
+							<p slot='ming'>移动支付安全小知识！</p>
+							<ul class="ul">
+								<li>◎ 我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制 作和维护成为一件轻松惬意的事</li>
+								<li>◎ 当今最领先的响应式自助建站平台</li>
+								<li>◎ 我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事</li>
+							</ul>
+						</div>
+					</no3>
+				</div>
 			</div>
 		</div>
 		<template id="no1">
@@ -235,13 +243,27 @@
 						</div>
 						<div class="n_right">
 							<ul>
-								<li>首页</li>
-								<li>使用流程</li>
-								<li>全球服务</li>
-								<li>关于我们</li>
-								<li>专业团队</li>
-								<li>联系我们</li>
-								<li>合作伙伴</li>
+								<li>
+									<a href="#shou">首页</a>
+								</li>
+								<li>
+									<a href="#one">使用流程</a>
+								</li>
+								<li>
+									<a href="#two">全球服务</a>
+								</li>
+								<li>
+									<a href="#three">关于我们</a>
+								</li>
+								<li>
+									<a>专业团队</a>
+								</li>
+								<li>
+									<a href="#shou">联系我们</a>
+								</li>
+								<li>
+									<a>合作伙伴</a>
+								</li>
 							</ul>
 						</div>
 					</div>
